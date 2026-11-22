@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>移動しました</title>
+<script>
+(function () {
+  var MOVED = ["teko-nazo","dagakki-ongaku","kanji-kakitori","wakuwaku-programming","hoshi-atsume","math-ai","nihon-bunka","shashin-teishutsu"];
+  var p = location.pathname.split("/").filter(Boolean);
+  if (p.length && MOVED.indexOf(p[0]) !== -1) {
+    location.replace("https://kyouzai-lab.github.io" + location.pathname + location.search + location.hash);
+  } else {
+    document.documentElement.className = "notfound";
+  }
+})();
+</script>
+<meta http-equiv="refresh" content="2;url=https://kyouzai-lab.github.io/teko-nazo/">
+<style>
+  body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:"Hiragino Sans","Noto Sans JP",system-ui,sans-serif;background:#f6f4ef;color:#1d1d1b;text-align:center;padding:16px}
+  p{font-size:20px;line-height:1.8;margin:0 0 12px}
+  a{color:#1d4ed8;font-weight:700}
+  .nf{display:none}.notfound .mv{display:none}.notfound .nf{display:block}
+</style>
+</head>
+<body>
+<main>
+  <div class="mv"><p>この教材は あたらしい場所に うつりました。<br>じどうで いどうします…</p>
+  <p><a id="go" href="https://kyouzai-lab.github.io/teko-nazo/">うごかないときは ここをタップ</a></p></div>
+  <div class="nf"><p>ページが見つかりませんでした。</p><p><a href="https://kyouzai-lab.github.io/">教材ラボへ</a></p></div>
+</main>
+<script>var a=document.getElementById("go");if(a&&document.documentElement.className!=="notfound")a.href="https://kyouzai-lab.github.io"+location.pathname+location.search+location.hash;</script>
+</body>
+</html>
